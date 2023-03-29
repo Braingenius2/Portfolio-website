@@ -48,3 +48,66 @@ nav ul li a {
 nav ul li a:hover {
   color: #9b4dca;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.headline {
+  background-image: url(/images/background1.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headline {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+}
+
+.headline h1 {
+  color: #36b37e;
+  line-height: 2.2rem;
+  margin-top: 64px;
+}
+
+.headline h1 span {
+  color: #172b4d;
+  font-weight: 700;
+}
+
+.headline p {
+  width: 85%;
+  margin-top: 15px;
+}
+
+.headline ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.disabled {
+  margin-top: auto;
+}
