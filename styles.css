@@ -74,9 +74,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.headline {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   text-align: center;
@@ -101,7 +98,6 @@ body {
 
 .headline ul {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 20px;
   gap: 10px;
