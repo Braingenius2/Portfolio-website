@@ -51,19 +51,6 @@ nav ul li a:hover {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-}
-
 .headline {
   background-image: url(/images/background1.png);
   background-size: 100% 100%;
