@@ -49,9 +49,9 @@ body {
   }
 
   .Header-illustration-desktop {
-    background-image: url(images/Header-llustration-desktop.png);
+    background-image: url(./images/Header-llustration-desktop.png);
     background-size: 100% 100%;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
     width: 100vw;
@@ -159,11 +159,19 @@ body {
     color: #9b4dca;
   }
 
-  .headline {
-    background-image: url(/images/background1.png);
-    background-size: 100% 100%;
-    background-position: center;
+  .Header-illustration-desktop {
+    background-image: url(./images/background1.png);
+    background-size: 61% 100%;
+    background-position: center center;
     background-repeat: no-repeat;
+    position: absolute;
+    width: 630.38px;
+    height: 653.32px;
+    left: -126.38px;
+    top: 92.8px;
+  }
+
+  .headline {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -200,6 +208,6 @@ body {
   }
 
   .disabled {
-    margin-top: auto;
+    margin-top: 80.49px;
   }
 }
