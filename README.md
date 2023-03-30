@@ -31,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio-setup-and-mobile-first-] <a name="about-project"></a>
+# 📖 Portfolio-setup-and-mobile-first- <a name="about-project"></a>
 
 **[Portfolio-setup-and-mobile-first]** is a repo to build a personal portfolio site.
 
