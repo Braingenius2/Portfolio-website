@@ -51,9 +51,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Customized toolbar and colorful headline section]**
-- **[Button interactions (i.e. hover, etc.)]**
-- **[Responsive for both mobile and desktop screen]**
+- **Customized toolbar and colorful headline section**
+- **Button interactions (i.e. hover, etc.)**
+- **Responsive for both mobile and desktop screen**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
