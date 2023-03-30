@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio-setup-and-mobile-first-] <a name="about-project"></a>
+# 📖 Portfolio-setup-and-mobile-first- <a name="about-project"></a>
 
-**[Portfolio-setup-and-mobile-first]** is a repo to build a personal portfolio site.
+**Portfolio-setup-and-mobile-first** is a repo to build a personal portfolio site.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,9 +51,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Customized toolbar and colorful headline section]**
-- **[Button interactions (i.e. hover, etc.)]**
-- **[Responsive for both mobile and desktop screen]**
+- **Customized toolbar and colorful headline section**
+- **Button interactions (i.e. hover, etc.)**
+- **Responsive for both mobile and desktop screen**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
