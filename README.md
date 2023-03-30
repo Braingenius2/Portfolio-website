@@ -33,7 +33,7 @@
 
 # 📖 Portfolio-setup-and-mobile-first- <a name="about-project"></a>
 
-**[Portfolio-setup-and-mobile-first]** is a repo to build a personal portfolio site.
+**Portfolio-setup-and-mobile-first** is a repo to build a personal portfolio site.
 
 ## 🛠 Built With <a name="built-with"></a>
 
