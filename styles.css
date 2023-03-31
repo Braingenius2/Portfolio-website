@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+/* CSS for desktop screens */
+@media only screen and (min-width: 768px) {
+  .toolbar {
+    /* margin-bottom: 160px; */
+    position: absolute;
+    width: 100vw;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .flex-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: #9b4dca;
+  }
+
+  .headline {
+    background-image: url(./images/Header-llustration-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    padding: 160px 0;
+    gap: 24px;
+  }
+
+  .headline h1 {
+    color: #36b37e;
+    width: 920px;
+
+    /* height: 114px; */
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.37px;
+    margin-top: 0;
+  }
+
+  .headline h1 span {
+    color: #172b4d;
+  }
+
+  .headline p {
+    width: 920px;
+    height: 96px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+
+    /* Neutrals/N800 */
+    color: #172b4d;
+  }
+
+  .headline ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    align-items: baseline;
+    margin-top: 24px;
+  }
+
+  .disabled {
+    margin-top: auto;
+  }
+}
+
+/* CSS for mobile screens */
+@media only screen and (max-width: 767px) {
+  .toolbar {
+    background-color: #f7f7f9;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .flex-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: #9b4dca;
+  }
+
+  .headline {
+    background-image: url(./images/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .headline h1 {
+    color: #36b37e;
+    line-height: 3.25rem;
+    margin-top: 63.2px;
+  }
+
+  .headline h1 span {
+    color: #172b4d;
+    font-weight: 700;
+  }
+
+  .headline p {
+    width: 85%;
+    margin-top: 15px;
+  }
+
+  .headline ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    align-items: baseline;
+  }
+
+  .disabled {
+    margin-top: 80.49px;
+  }
+}
