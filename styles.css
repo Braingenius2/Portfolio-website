@@ -48,20 +48,14 @@ body {
     color: #9b4dca;
   }
 
-  .Header-illustration-desktop {
-    background-image: url(./images/Header-llustration-desktop.png);
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100vw;
-    height: 1407.45px;
-    left: 27px;
-    top: -390.55px;
-  }
-
   .headline {
+    background-image: url(./images/Header-llustration-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -159,19 +153,12 @@ body {
     color: #9b4dca;
   }
 
-  .Header-illustration-desktop {
-    background-image: url(./images/background1.png);
-    background-size: 61% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 630.38px;
-    height: 653.32px;
-    left: -126.38px;
-    top: 92.8px;
-  }
-
   .headline {
+    background-image: url(./images/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -185,8 +172,8 @@ body {
 
   .headline h1 {
     color: #36b37e;
-    line-height: 2.2rem;
-    margin-top: 64px;
+    line-height: 3.25rem;
+    margin-top: 63.2px;
   }
 
   .headline h1 span {
