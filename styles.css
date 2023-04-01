@@ -327,16 +327,8 @@ article.card div.text h2 {
   border-radius: 4px;
 }
 
-.card-row .content .tags  li {
-  align-items: center;
-  padding: 12px;
 
-  /* Neutrals/N0 */
-  background: #FFFFFF;
-  border-radius: 8px;
-}
-
-.card button {
+button {
   text-align: center;
   padding: 12px;
 
@@ -347,7 +339,7 @@ article.card div.text h2 {
   border-radius: 4px;
 }
 
-.card button:hover {
+button:hover {
   background-color: #C5E9DA;
 }
 
@@ -364,3 +356,101 @@ article.card div.text h2 {
 
 }
 
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 58px;
+  height: 1522px;
+  top: 3927px;
+}
+
+#about div.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  height: 338px;
+}
+
+#about div.text h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%; /* or 52px */
+  text-align: center;
+
+  /* Neutrals/N800 */
+  color: #172B4D;
+
+}
+
+#about div.text p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%; /* or 32px */
+  text-align: center;
+
+  /* Neutrals/N500 */
+  color: #42526E;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  gap: 24px;
+  height: 998px;
+
+}
+
+.card-row article {
+  width: 327px;
+  height: 316px;
+
+  /* Theme 2 / Neutral 10 */
+  background: #EBF0EE;
+
+  /* Neutrals/N50 */
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+}
+
+.card-row figure {
+  height: 128px;
+  text-align: center;
+  top: 16px;
+}
+
+#about .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  height: 96px;
+  bottom: 72px;
+}
+
+#about .content li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%; /* identical to box height, or 16px */
+  align-items: center;
+  padding: 12px;
+  letter-spacing: 0.03em;
+
+  /* Success/G300 */
+  color: #36B37E;
+
+  /* Neutrals/N0 */
+  background: #FFFFFF;
+  border-radius: 8px;
+}
