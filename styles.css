@@ -188,7 +188,7 @@ body {
     border-radius: 8px;
     width: 369px;
     height: 222px;
-    left: calc(50% - 327px/2);
+    left: calc(50% - 327px / 2);
     bottom: 0;
   }
 
@@ -545,7 +545,7 @@ body {
     border-radius: 8px;
     width: 327px;
     height: 222px;
-    left: calc(50% - 327px/2);
+    left: calc(50% - 327px / 2);
   }
 
   .img-placeholder {
@@ -615,7 +615,7 @@ body {
   } */
 
   .see-project {
-    font-family: 'Inter' sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
