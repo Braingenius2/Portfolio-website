@@ -18,7 +18,7 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     background-image: url(./images/illustration-about-me-2-desktop.png), url(./images/frame-about-me.png);
-    background-position: 133px 2832px, 1436px 2607px;
+    background-position: 133px 2616px, 1436px 2360px;
     background-repeat: no-repeat, no-repeat;
   }
 
@@ -328,7 +328,7 @@ body {
     height: 355px;
   }
 
-  .card-row article {
+  .card-row .item {
     width: 369px;
     height: 316px;
 
@@ -377,12 +377,6 @@ body {
 
 /* CSS for mobile screens */
 @media only screen and (max-width: 767px) {
-  #about {
-    background-image: url(./images/frame-about-me-mobile-left.png), url(./images/frame-about-me-mobile-right.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 52px 366px, 482.41px 5px;
-  }
-
   .toolbar {
     background-color: #f7f7f9;
     display: flex;
@@ -639,6 +633,9 @@ body {
   }
 
   #about {
+    background-image: url(./images/frame-about-me-mobile-left.png), url(./images/frame-about-me-mobile-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 52px 366px, 482.41px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -693,7 +690,7 @@ body {
     height: 998px;
   }
 
-  .card-row article {
+  .card-row .item {
     width: 327px;
     height: 316px;
 
