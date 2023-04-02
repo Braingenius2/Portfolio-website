@@ -377,6 +377,12 @@ body {
 
 /* CSS for mobile screens */
 @media only screen and (max-width: 767px) {
+  #about {
+    background-image: url(./images/frame-about-me-mobile-left.png), url(./images/frame-about-me-mobile-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 52px 366px, 482.41px 5px;
+  }
+
   .toolbar {
     background-color: #f7f7f9;
     display: flex;
@@ -529,7 +535,7 @@ body {
     flex-direction: column;
 
     /* position: relative; */
-    width: 327px;
+    width: 370px;
     height: 474px;
   }
 
@@ -586,9 +592,19 @@ body {
     gap: 8px;
   }
 
+  .card .text .tags {
+    height: 32px;
+  }
+
   .card .text .tags li {
     align-items: center;
     padding: 8px 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 133%; /* identical to box height, or 16px */
+    letter-spacing: 0.03em;
 
     /* Theme 2 / Neutral 10 */
     background: #ebf0ee;
