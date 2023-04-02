@@ -155,7 +155,7 @@ Example:
 
 - GitHub: [@braingenius2](https://github.com/braingenius2)
 - Twitter: [@twitterhandle](https://twitter.com/braingenius2)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fortune-uzodinma-8943b2136/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
