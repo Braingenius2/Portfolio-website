@@ -635,7 +635,7 @@ body {
   #about {
     background-image: url(./images/frame-about-me-mobile-left.png), url(./images/frame-about-me-mobile-right.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: 52px 366px, 482.41px 5px;
+    background-position: 8px 338px, 324.41px 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
