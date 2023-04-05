@@ -52,7 +52,7 @@ body {
   .headline {
     background-image: url(./images/Header-llustration-desktop.png);
     background-size: contain;
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
     object-fit: cover;
     height: 100vh;
