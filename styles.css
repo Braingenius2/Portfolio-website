@@ -104,7 +104,7 @@ body {
     color: #172b4d;
   }
 
-  .headline ul {
+  .social-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -508,7 +508,7 @@ body {
     margin-top: 15px;
   }
 
-  .headline ul {
+  .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -895,6 +895,25 @@ body {
   }
 
   .form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
     width: 50%;
+  }
+
+  .footer-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-top: 31px;
+
+    /* Neutrals/N500 */
+    color: #42526e;
   }
 }
