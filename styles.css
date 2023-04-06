@@ -104,7 +104,7 @@ body {
     color: #172b4d;
   }
 
-  .headline ul {
+  .social-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -373,6 +373,66 @@ body {
     background: #fff;
     border-radius: 8px;
   }
+
+  /*  CONTACT FORM */
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 80px 0;
+    gap: 24px;
+    width: 1171px;
+    left: 135px;
+    top: 3054px;
+  }
+
+  #contact h2 {
+    color: #172b4d;
+    text-align: center;
+    padding: 0.5rem 0 2.5rem 0;
+    width: 40%;
+    height: 256px;
+    margin: auto;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 330px;
+  }
+
+  #contact form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #d0d9d4;
+  }
+
+  #contact form ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #contact form textarea {
+    border: 1px solid #60c095;
+    border-radius: 4px;
+  }
+
+  #contact form textarea::placeholder {
+    padding: 0.4rem;
+  }
+
+  #contact form button {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .form-button {
+    text-align: center;
+  }
 }
 
 /* CSS for mobile screens */
@@ -448,7 +508,7 @@ body {
     margin-top: 15px;
   }
 
-  .headline ul {
+  .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -734,5 +794,138 @@ body {
     /* Neutrals/N0 */
     background: #fff;
     border-radius: 8px;
+  }
+
+  /*  CONTACT FORM */
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 879px;
+    top: 5374px;
+    padding: 64px 24px;
+    gap: 58px;
+  }
+
+  #contact h2 {
+    color: #172b4d;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%; /* or 52px */
+    text-align: center;
+    margin: auto;
+    width: 98.2%;
+  }
+
+  #contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98.2%;
+    gap: 24px;
+  }
+
+  #contact form .detail {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d0d9d4;
+    background: #fff;
+  }
+
+  #contact form input {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%; /* or 24px */
+    display: flex;
+    align-items: center;
+
+    /* Theme 1 /  Neutrals 6 */
+    color: #6b778c;
+    border: none;
+    margin: 15px 16px;
+  }
+
+  /* #contact form ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  } */
+
+  #contact form .message {
+    box-sizing: border-box;
+    border: 1px solid #60c095;
+    border-radius: 4px;
+    background: #fff;
+  }
+
+  #contact form textarea {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%; /* or 24px */
+    color: #42526e;
+    height: 114px;
+    margin: 12px 12px;
+    border: none;
+  }
+
+  #contact form textarea::placeholder {
+    padding: 0.4rem;
+  }
+
+  #contact button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 141%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  .form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 50%;
+  }
+
+  .footer-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-top: 31px;
+
+    /* Neutrals/N500 */
+    color: #42526e;
+  }
+
+  footer .social-icons {
+    margin-bottom: 2rem;
+  }
+
+  footer hr {
+    height: 0.4rem;
+    border-radius: 6px;
+    background-color: black;
+    margin: 0 36.5% 0 36.5%;
+    margin-bottom: 8px;
   }
 }
