@@ -194,6 +194,7 @@ article.card div.text h2 {
   padding: 0;
   gap: 8px;
   width: 100%;
+  justify-content: center;
 }
 
 .card .text .tags {
@@ -473,10 +474,10 @@ footer hr {
 
 /* CSS for desktop screens */
 @media only screen and (min-width: 768px) {
-  body {
-    background-image: url(./images/illustration-about-me-2-desktop.png), url(./images/frame-about-me.png);
-    background-position: 133px 2616px, 1436px 2360px;
-    background-repeat: no-repeat, no-repeat;
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .toolbar {
@@ -578,7 +579,7 @@ footer hr {
     height: 1244px;
     margin-left: 3%;
     margin-right: 3%;
-    width: auto;
+    width: 95%;
   }
 
   #works .text {
@@ -597,8 +598,8 @@ footer hr {
     /* justify-items: center; */
     align-items: center;
     padding: 0;
-    gap: 24px;
-    width: 1171px;
+    gap: 24px 11px;
+    width: auto;
     height: 988px;
   }
 
@@ -607,7 +608,7 @@ footer hr {
     flex-direction: column;
 
     /* position: relative; */
-    width: 369px;
+    width: auto;
     height: 474px;
   }
 
@@ -650,13 +651,7 @@ footer hr {
   }
 
   .tags {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 8px;
+    margin-bottom: 24px;
   }
 
   .card .text .tags li {
@@ -696,13 +691,16 @@ footer hr {
   }
 
   #about {
+    background-image: url(./images/illustration-about-me-2-desktop.png), url(./images/frame-about-me.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -10% top 35%, right -10% top -8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px 0 1px;
     gap: 48px;
     height: 739px;
-    top: 2331px;
+    width: 100vw;
   }
 
   #about div.text {
@@ -711,6 +709,7 @@ footer hr {
     align-items: center;
     gap: 24px;
     height: 240px;
+    width: 80%;
   }
 
   #about div.text h1 {
@@ -732,8 +731,6 @@ footer hr {
     font-size: 20px;
     line-height: 160%; /* or 32px */
     text-align: center;
-    width: 920px;
-    height: 96px;
 
     /* Neutrals/N500 */
     color: #42526e;
@@ -759,13 +756,13 @@ footer hr {
     align-items: center;
     padding: 4px 8px 0;
     gap: 24px;
-    width: 1172px;
+    width: 95%;
     height: 355px;
   }
 
   .card-row .item {
     width: 369px;
-    height: 316px;
+    height: 326px;
 
     /* Theme 2 / Neutral 10 */
     background: #ebf0ee;
@@ -791,81 +788,40 @@ footer hr {
     bottom: 72px;
   }
 
-  #about .content li {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 133%; /* identical to box height, or 16px */
-    align-items: center;
-    padding: 12px;
-    letter-spacing: 0.03em;
-
-    /* Success/G300 */
-    color: #36b37e;
-
-    /* Neutrals/N0 */
-    background: #fff;
-    border-radius: 8px;
-  }
-
   /*  CONTACT FORM */
-
   #contact {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
-    width: 1171px;
-    left: 135px;
-    top: 3054px;
+    margin-top: 17.5px;
+    width: 95%;
   }
 
   #contact h2 {
-    color: #172b4d;
-    text-align: center;
-    padding: 0.5rem 0 2.5rem 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
     width: 40%;
     height: 256px;
-    margin: auto;
+    padding: 16% 0 16% 0;
+    font-size: 32px;
+    line-height: 173%;
+    text-align: left;
   }
 
   #contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 60%;
-    height: 330px;
   }
 
-  #contact form input {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #d0d9d4;
-  }
-
-  #contact form ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  #contact form textarea {
-    border: 1px solid #60c095;
-    border-radius: 4px;
-  }
-
-  #contact form textarea::placeholder {
-    padding: 0.4rem;
-  }
-
-  #contact form button {
-    margin: 1rem 0 1.5rem 0;
+  #contact ul {
+    width: auto;
+    align-items: flex-start;
   }
 
   .form-button {
-    text-align: center;
+    justify-content: flex-start;
+    padding: 0;
   }
 }
