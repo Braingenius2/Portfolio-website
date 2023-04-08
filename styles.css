@@ -15,7 +15,6 @@ body {
 }
 
 .toolbar {
-  background-color: #f7f7f9;
   display: flex;
   justify-content: flex-end;
 }
@@ -54,14 +53,13 @@ nav ul li a:hover {
 
 .headline {
   background-image: url(./images/background1.png);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  object-fit: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -71,8 +69,9 @@ nav ul li a:hover {
 
 .headline h1 {
   color: #36b37e;
-  line-height: 3.25rem;
-  margin-top: 63.2px;
+  line-height: 130%;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .headline h1 span {
@@ -85,6 +84,9 @@ nav ul li a:hover {
 .headline p {
   width: 85%;
   margin-top: 15px;
+  line-height: 140%;
+  font-size: 20px;
+  color: #172b4d;
 }
 
 .social-icons {
