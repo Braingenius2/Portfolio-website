@@ -709,7 +709,7 @@ footer hr {
     align-items: center;
     gap: 24px;
     height: 240px;
-    width: 80%;
+    width: 60%;
   }
 
   #about div.text h1 {
@@ -736,6 +736,10 @@ footer hr {
     color: #42526e;
   }
 
+  #about .content li {
+    padding: 16px;
+  }
+
   button.get-resume {
     width: 153px;
     height: 48px;
@@ -756,8 +760,9 @@ footer hr {
     align-items: center;
     padding: 4px 8px 0;
     gap: 24px;
-    width: 95%;
+    width: 80%;
     height: 355px;
+    justify-content: space-around;
   }
 
   .card-row .item {
@@ -790,13 +795,16 @@ footer hr {
 
   /*  CONTACT FORM */
   #contact {
+    background-image: url(./images/illustration-1-contact-form-desktop.png), url(./images/illustration-2-contact-form-desktop.png), url(./images/form-illustratoin-3-desktop.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom 18% left, bottom 25% left 20%, bottom 19% right;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
     margin-top: 17.5px;
-    width: 95%;
+    width: 100vw;
   }
 
   #contact h2 {
@@ -809,10 +817,16 @@ footer hr {
     font-size: 32px;
     line-height: 173%;
     text-align: left;
+    margin-left: 10%;
   }
 
   #contact form {
     width: 60%;
+    margin-right: 10%;
+  }
+
+  #contact form .message {
+    width: 100%;
   }
 
   #contact ul {
@@ -823,5 +837,24 @@ footer hr {
   .form-button {
     justify-content: flex-start;
     padding: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .footer-text {
+    display: none;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  footer .social-icons {
+    margin-bottom: 0;
   }
 }
