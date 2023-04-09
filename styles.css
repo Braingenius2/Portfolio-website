@@ -551,6 +551,18 @@ footer hr {
     margin-top: 0;
     margin-left: 18%;
     margin-right: 18%;
+    transform-origin: center;
+    animation: rotate 2s ease-in-out;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .headline h1 br {
