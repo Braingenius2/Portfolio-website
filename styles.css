@@ -9,6 +9,33 @@
   text-decoration: none;
 }
 
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  border: none;
+
+  /* Theme 2 / Primary 2 */
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #36b37f;
+}
+
+button:active {
+  background-color: #008552;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -223,23 +250,6 @@ article.card div.text h2 {
   border-radius: 4px;
 }
 
-button {
-  text-align: center;
-  padding: 12px;
-
-  /* Theme 2 / Primary 2 */
-  background: #36b37f;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #c5e9da;
-}
-
-.card button:active {
-  box-shadow: 0 0 20px #fff;
-}
-
 .see-project {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -431,7 +441,7 @@ button:hover {
   padding: 0.4rem;
 }
 
-#contact button {
+/* #contact button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -442,14 +452,9 @@ button:hover {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-}
+} */
 
 .form-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
   width: 50%;
 }
 
@@ -672,25 +677,6 @@ footer hr {
     border-radius: 4px;
   }
 
-  button {
-    text-align: center;
-    padding: 12px;
-
-    /* gap: 10px; */
-
-    /* Theme 2 / Primary 2 */
-    background: #36b37f;
-    border-radius: 4px;
-  }
-
-  button:hover {
-    background-color: #c5e9da;
-  }
-
-  /* .card button:active {
-    box-shadow:
-  } */
-
   .see-project {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -746,21 +732,6 @@ footer hr {
 
   #about .content li {
     padding: 12px;
-  }
-
-  button.get-resume {
-    width: 153px;
-    height: 48px;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 141%; /* identical to box height, or 24px */
-    letter-spacing: 0.03em;
-    margin-bottom: 69.5px;
-  }
-
-  button.see-project {
-    width: 122px;
-    height: 48px;
   }
 
   .card-row {
