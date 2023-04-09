@@ -42,7 +42,12 @@ nav ul {
 }
 
 nav ul li a {
-  color: #333;
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 133%;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -485,6 +490,7 @@ footer hr {
   .toolbar {
     width: 100vw;
     justify-content: center;
+    position: absolute;
   }
 
   .menu-icon {
@@ -505,7 +511,6 @@ footer hr {
   }
 
   nav ul li a {
-    color: #333;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
   }
@@ -516,10 +521,9 @@ footer hr {
 
   .headline {
     background-image: url(./images/Header-llustration-desktop.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat, no-repeat;
     background-position: top center;
-    object-fit: cover;
     height: 100vh;
     width: 100vw;
     align-items: center;
@@ -533,7 +537,7 @@ footer hr {
 
   .headline h1 {
     color: #36b37e;
-    width: 86%;
+    width: 85%;
     font-weight: 800;
     font-size: 48px;
     line-height: 125%;
@@ -544,14 +548,17 @@ footer hr {
     margin-right: 18%;
   }
 
+  .headline h1 br {
+    display: none;
+  }
+
   .headline h1 span {
     color: #172b4d;
     justify-content: center;
   }
 
   .headline p {
-    width: 86%;
-    height: 96px;
+    width: 55%;
     font-weight: 400;
     font-size: 20px;
     line-height: 160%;
@@ -695,13 +702,13 @@ footer hr {
   #about {
     background-image: url(./images/illustration-about-me-2-desktop.png), url(./images/frame-about-me.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: left -10% top 35%, right -10% top -8%;
+    background-position: left top 30%, right top -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px 0 1px;
     gap: 48px;
-    height: 739px;
+    height: auto;
     width: 100vw;
   }
 
@@ -710,7 +717,6 @@ footer hr {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    height: 240px;
     width: 60%;
   }
 
@@ -739,7 +745,7 @@ footer hr {
   }
 
   #about .content li {
-    padding: 16px;
+    padding: 12px;
   }
 
   button.get-resume {
@@ -749,6 +755,7 @@ footer hr {
     font-size: 17px;
     line-height: 141%; /* identical to box height, or 24px */
     letter-spacing: 0.03em;
+    margin-bottom: 69.5px;
   }
 
   button.see-project {
@@ -759,17 +766,20 @@ footer hr {
   .card-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     padding: 4px 8px 0;
     gap: 24px;
     width: 80%;
-    height: 355px;
+    height: 100%;
     justify-content: space-around;
   }
 
   .card-row .item {
-    width: 369px;
-    height: 326px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 25%;
+    height: auto;
 
     /* Theme 2 / Neutral 10 */
     background: #ebf0ee;
@@ -791,8 +801,7 @@ footer hr {
     align-items: center;
     padding: 0;
     gap: 24px;
-    height: 96px;
-    bottom: 72px;
+    height: auto;
   }
 
   /*  CONTACT FORM */
