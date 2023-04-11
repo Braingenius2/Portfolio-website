@@ -105,11 +105,7 @@ Example command:
 --->
 
 ### Usage
-Welcome to my portfolio website showcasing my expertise as a web developer. To get started, you can either download the project as a zip file from Github or clone the repository to your local machine using the command git clone git@github.com:Braingenius2/Portfolio-website.git
-
-Once you have the project on your local machine, navigate to the project directory and open the index.html file in your preferred web browser.
-
-Feel free to explore the different sections of the website to learn more about my skills and experience as a web developer. If you have any questions or feedback, don't hesitate to contact me using the contact form provided on the website.
+Welcome to my portfolio website showcasing my expertise as a web developer. View [my portfolio website](https://braingenius2.github.io/)
 
 
 
