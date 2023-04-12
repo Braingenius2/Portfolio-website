@@ -113,7 +113,7 @@ Example command:
 --->
 
 ### Usage
-Welcome to my portfolio website showcasing my expertise as a web developer. View [my portfolio website](https://braingenius2.github.io/)
+Welcome to my portfolio website showcasing my expertise as a web developer. View [my portfolio website](https://braingenius2.github.io/Portfolio-website/)
 
 
 
