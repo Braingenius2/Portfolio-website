@@ -133,6 +133,18 @@ nav ul li a:hover {
   margin-top: 80.49px;
 }
 
+#contact h2 {
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%; /* or 52px */
+  text-align: center;
+  margin: auto;
+  width: 98.2%;
+}
+
 #works {
   display: flex;
   flex-direction: column;
@@ -152,7 +164,7 @@ nav ul li a:hover {
   height: 100%;
 }
 
-#works .text h1 {
+#works .text h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -208,7 +220,7 @@ article.card div.text {
   border-radius: 8px;
 }
 
-article.card div.text h2 {
+article.card div.text h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -279,7 +291,7 @@ article.card div.text h2 {
   height: 338px;
 }
 
-#about div.text h1 {
+#about .text h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -373,18 +385,6 @@ article.card div.text h2 {
   top: 5374px;
   padding: 64px 24px;
   gap: 58px;
-}
-
-#contact h2 {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 130%; /* or 52px */
-  text-align: center;
-  margin: auto;
-  width: 98.2%;
 }
 
 #contact ul {
@@ -541,7 +541,6 @@ footer hr {
   }
 
   .headline h1 {
-    color: #36b37e;
     width: 85%;
     font-weight: 800;
     font-size: 48px;
@@ -664,7 +663,7 @@ footer hr {
     border-radius: 8px;
   }
 
-  article.card div.text h2 {
+  article.card div.text h3 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -716,18 +715,6 @@ footer hr {
     align-items: center;
     gap: 24px;
     width: 60%;
-  }
-
-  #about div.text h1 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 130%; /* or 52px */
-    text-align: center;
-
-    /* Neutrals/N800 */
-    color: #172b4d;
   }
 
   #about div.text p {
