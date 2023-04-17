@@ -133,6 +133,18 @@ nav ul li a:hover {
   margin-top: 80.49px;
 }
 
+#contact h2 {
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%; /* or 52px */
+  text-align: center;
+  margin: auto;
+  width: 98.2%;
+}
+
 #works {
   display: flex;
   flex-direction: column;
@@ -279,7 +291,7 @@ article.card div.text h3 {
   height: 338px;
 }
 
-#about div.text h2 {
+#about .text h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -373,18 +385,6 @@ article.card div.text h3 {
   top: 5374px;
   padding: 64px 24px;
   gap: 58px;
-}
-
-#contact h2 {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 130%; /* or 52px */
-  text-align: center;
-  margin: auto;
-  width: 98.2%;
 }
 
 #contact ul {
