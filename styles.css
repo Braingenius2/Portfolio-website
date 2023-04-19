@@ -59,6 +59,8 @@ body {
 .flex-nav {
   display: flex;
   justify-content: space-between;
+  padding-right: 42px;
+  padding-top: 10px;
 }
 
 nav ul {
@@ -108,6 +110,7 @@ nav ul li a:hover {
   gap: 8px;
   width: 95%;
   height: auto;
+  padding-left: 12px;
 }
 
 #mobile-menu #list .list-item {
