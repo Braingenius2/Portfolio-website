@@ -84,6 +84,7 @@ nav ul li a:hover {
 }
 
 #mobile-menu {
+  display: none;
   position: fixed;
   background: #f7f7f9;
   width: 100vw;
@@ -117,6 +118,7 @@ nav ul li a:hover {
 
 #mobile-menu #list .list-item a {
   margin: 16px 16px;
+  width: 50%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
