@@ -21,7 +21,8 @@ mobileMenu.querySelectorAll('a').forEach((link) => {
   });
 });
 
-let works = [
+// Create a JavaScript array to store all of the information for all projects
+let worksData = [
   {
     name: "Multi-Post Stories Gain+Glory",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
@@ -77,3 +78,33 @@ let works = [
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   }
 ];
+
+// Dynamically create works section using the information stored in the works array
+const works = document.getElementById('works');
+const worksText = document.createElement('div');
+text.setAttribute('class', 'text');
+let textContent = `<h2>My Recent Works</h2>
+                    <hr class="indicator">`;
+text.innerHTML(textContent);
+
+// loop through worksData to create cards in the grid
+for (let i = 0; i < worksData.length; i++) {
+  const cardWorkRow = document.createElement('div');
+  cardWorkRow.setAttribute('class', 'card-work-row');
+
+  const card = document.createElement('article');
+  card.setAttribute('class', 'card');
+  cardWorkRow.appendChild(card);
+
+  const imgPlaceholder = document.createElement('figure');
+  imgPlaceholder.setAttribute('class', 'img-placeholder');
+  card.appendChild(imgPlaceholder);
+  let figureContent = `<img src="" alt="">
+                        <figcaption></figcaption>`;
+  imgPlaceholder.innerHTML(figureContent);
+
+  const cardText = document.createElement('div');
+  cardText.setAttribute('class', 'text');
+  card.appendChild(cardText);
+
+};
