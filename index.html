@@ -13,14 +13,24 @@
         <header class="toolbar">
             <nav class="flex-nav">
                 <ul class="nav-menu">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu-icon">
-                    <a href=""><img src="images/button-enabled.png" alt="navigation bar menu toggler button"></a>
+                    <img id="hamburger-icon" src="images/button-enabled.png" alt="toggler button">
                 </div>
             </nav>
+            <div id="mobile-menu">
+                <div id="cancel-toolbar">
+                    <img id="menu-close" src="images/cancel-menu-png.png" alt="toggler cancel button"> 
+                </div>
+                <ul id="list">
+                    <li class="list-item"><a href="#works">Portfolio</a></li>
+                    <li class="list-item"><a href="#about">About</a></li>
+                    <li class="list-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
                         
         </header>
 
@@ -274,6 +284,8 @@
         </footer>
 
     </div>
+
+    <script src="index.js"></script>
     
 </body>
 </html>

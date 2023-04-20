@@ -46,6 +46,7 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>Javascript</li>
   </ul>
 </details>
 
@@ -53,7 +54,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Customized toolbar and colorful headline section**
+- **Cool toolbar with hamburger menu and a mobile menu**
 - **Button interactions (i.e. hover, etc.)**
 - **Responsive for both mobile and desktop screen**
 
@@ -72,11 +73,11 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
-To get a local copy up and running, follow these steps. Download the source code and view!
+To get a local copy up and running, follow these steps. Check the live demo section for link to the live website!
 
 ### Prerequisites
 
-In order to run this project you need: Only a computer with a working browser like Chrome. Right-click on index.html and open with a standard modern browser.
+In order to run this project you need: Only a computer with a working browser like Chrome.
 
 <!--
 Example command:
@@ -90,14 +91,12 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/Braingenius2/Portfolio-website.git
 ```
---->
 
 ### Install
 
@@ -168,8 +167,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Desktop version**
-- [ ] **Contact form**
+- [ ] **Dynamic background images**
+- [ ] **Newsletter subscription form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
