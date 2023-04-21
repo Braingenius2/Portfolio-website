@@ -242,12 +242,10 @@ nav ul li a:hover {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin: auto;
-  /* margin: 20px 16px 26px 16px; */
   position: absolute;
   top: 20px;
   left: 16px;
   right: 16px;
-  /* bottom: 26px; */
 }
 
 .featured-image {
