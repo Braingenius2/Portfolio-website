@@ -133,87 +133,87 @@ for (let i = 0; i < worksData.length; i++) {
 // Define function to dynamically generate popup
 function generatePopup() {
   // select the works section
-const works = document.querySelector('#works');
+  const works = document.querySelector('#works');
 
-// create the mobile-popup container
-const mobilePopup = document.createElement('div');
-mobilePopup.classList.add('mobile-popup');
+  // create and append the mobile-popup container
+  const mobilePopup = document.createElement('div');
+  mobilePopup.classList.add('mobile-popup');
+  works.appendChild(mobilePopup);
 
-// create the card-works container
-const cardWorks = document.createElement('div');
-cardWorks.classList.add('card-works');
+  // create and append the card-works container
+  const cardWorks = document.createElement('div');
+  cardWorks.classList.add('card-works');
+  mobilePopup.appendChild(cardWorks);
 
-// create the featured-image figure
-const featuredImage = document.createElement('figure');
-featuredImage.classList.add('featured-image');
-const img1 = document.createElement('img');
-img1.id = 'img1';
-img1.src = worksData[0].featuredImageMobile;
-img1.alt = 'project image';
-featuredImage.appendChild(img1);
+  // create and append the featured-image figure
+  const featuredImage = document.createElement('figure');
+  featuredImage.classList.add('featured-image');
+  const img1 = document.createElement('img');
+  img1.id = 'img1';
+  img1.src = worksData[0].featuredImageMobile;
+  img1.alt = 'project image';
+  featuredImage.appendChild(img1);
+  cardWorks.appendChild(featuredImage);
 
-// create the primary container
-const primary = document.createElement('div');
-primary.classList.add('primary');
-const h3 = document.createElement('h3');
-h3.textContent = worksData[0].name[1];
-primary.appendChild(h3);
+  // create and append the primary container
+  const primary = document.createElement('div');
+  primary.classList.add('primary');
+  cardWorks.appendChild(primary);
+  const h3 = document.createElement('h3');
+  h3.textContent = worksData[0].name[1];
+  primary.appendChild(h3);
 
-// create the tags container
-const tags = document.createElement('ul');
-tags.classList.add('tags');
-for (let i = 0; i < 3; i++) {
-  const tag = document.createElement('li');
-  tag.classList.add('tag');
-  tag.textContent = worksData[0].technologies[i];
-  tags.appendChild(tag);
+  // create and append the tags container
+  const tags = document.createElement('ul');
+  tags.classList.add('tags');
+  for (let i = 0; i < 3; i++) {
+    const tag = document.createElement('li');
+    tag.classList.add('tag');
+    tag.textContent = worksData[0].technologies[i];
+    tags.appendChild(tag);
+  };
+  primary.appendChild(tags);
+
+  // create and append the secondary container
+  const secondary = document.createElement('p');
+  secondary.classList.add('secondary');
+  secondary.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.";
+  cardWorks.appendChild(secondary);
+
+  // create and append the action container
+  const action = document.createElement('div');
+  action.classList.add('action');
+  cardWorks.appendChild(action);
+  const seeLiveButton = document.createElement('button');
+  seeLiveButton.classList.add('see-live');
+  seeLiveButton.type = 'button';
+  action.appendChild(seeLiveButton);
+  const seeLiveSpan = document.createElement('span');
+  seeLiveSpan.textContent = 'See live';
+  seeLiveButton.appendChild(seeLiveSpan);
+  const seeLiveImg = document.createElement('img');
+  seeLiveImg.src = 'images/see-live-icon.svg';
+  seeLiveImg.alt = 'see live icon';
+  seeLiveButton.appendChild(seeLiveImg);
+  const seeSourceButton = document.createElement('button');
+  seeSourceButton.classList.add('see-source');
+  seeSourceButton.type = 'button';
+  action.appendChild(seeSourceButton);
+  const seeSourceSpan = document.createElement('span');
+  seeSourceSpan.textContent = 'See source';
+  seeSourceButton.appendChild(seeSourceSpan);
+  const seeSourceImg = document.createElement('img');
+  seeSourceImg.src = 'images/see-source-icon.svg';
+  seeSourceImg.alt = 'see source icon github';
+  seeSourceButton.appendChild(seeSourceImg);
+
+  // create and append the overlay div
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+  mobilePopup.appendChild(overlay);
 };
-primary.appendChild(tags);
 
-// create the secondary container
-const secondary = document.createElement('p');
-secondary.classList.add('secondary');
-secondary.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.";
-cardWorks.appendChild(featuredImage);
-cardWorks.appendChild(primary);
-cardWorks.appendChild(secondary);
-
-// create the action container
-const action = document.createElement('div');
-action.classList.add('action');
-const seeLiveButton = document.createElement('button');
-seeLiveButton.classList.add('see-live');
-seeLiveButton.type = 'button';
-const seeLiveSpan = document.createElement('span');
-seeLiveSpan.textContent = 'See live';
-const seeLiveImg = document.createElement('img');
-seeLiveImg.src = 'images/see-live-icon.svg';
-seeLiveImg.alt = 'see live icon';
-seeLiveButton.appendChild(seeLiveSpan);
-seeLiveButton.appendChild(seeLiveImg);
-const seeSourceButton = document.createElement('button');
-seeSourceButton.classList.add('see-source');
-seeSourceButton.type = 'button';
-const seeSourceSpan = document.createElement('span');
-seeSourceSpan.textContent = 'See source';
-const seeSourceImg = document.createElement('img');
-seeSourceImg.src = 'images/see-source-icon.svg';
-seeSourceImg.alt = 'see source icon github';
-seeSourceButton.appendChild(seeSourceSpan);
-seeSourceButton.appendChild(seeSourceImg);
-action.appendChild(seeLiveButton);
-action.appendChild(seeSourceButton);
-cardWorks.appendChild(action);
-
-// append the card-works container to the mobile-popup container
-mobilePopup.appendChild(cardWorks);
-
-// create the overlay div
-const overlay = document.createElement('div');
-overlay.classList.add('overlay');
-
-// append the mobile-popup and overlay to the works section
-works.appendChild(mobilePopup);
-mobilePopup.appendChild(overlay);
-
-};
+// Add click event listeners to the see-project buttons
+document.querySelectorAll('.see-project').forEach((button) => {
+  button.addEventListener('click', generatePopup);
+});
