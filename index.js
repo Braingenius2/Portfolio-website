@@ -26,7 +26,7 @@ const worksData = [
   {
     name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    featuredImageMobile: 'images/featured-image-mobile.svg',
+    featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
@@ -35,7 +35,7 @@ const worksData = [
   {
     name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    featuredImageMobile: 'images/featured-image-mobile.svg',
+    featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
@@ -44,7 +44,7 @@ const worksData = [
   {
     name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    featuredImageMobile: 'images/featured-image-mobile.svg',
+    featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
@@ -53,7 +53,7 @@ const worksData = [
   {
     name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    featuredImageMobile: 'images/featured-image-mobile.svg',
+    featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
@@ -62,7 +62,7 @@ const worksData = [
   {
     name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    featuredImageMobile: 'images/featured-image-mobile.svg',
+    featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
@@ -71,7 +71,7 @@ const worksData = [
   {
     name: ['Multi-Post Stories Gain+Glory', 'Keeping track of hundreds of components'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    featuredImageMobile: 'images/featured-image-mobile.svg',
+    featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
@@ -134,12 +134,17 @@ for (let i = 0; i < worksData.length; i += 1) {
 // Define function to dynamically generate popup
 function generatePopup() {
   // select the works section
-  const works = document.querySelector('#works');
+  const card = document.querySelector('.card-work-row');
 
   // create and append the mobile-popup container
   const mobilePopup = document.createElement('div');
   mobilePopup.classList.add('mobile-popup');
-  works.appendChild(mobilePopup);
+  card.appendChild(mobilePopup);
+
+  // // create and append the overlay div
+  // const overlay = document.createElement('div');
+  // overlay.classList.add('overlay');
+  // mobilePopup.appendChild(overlay);
 
   // create and append the card-works container
   const cardWorks = document.createElement('div');
@@ -179,7 +184,7 @@ function generatePopup() {
   // create and append the secondary container
   const secondary = document.createElement('p');
   secondary.classList.add('secondary');
-  secondary.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.";
+  secondary.innerHTML = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`;
   cardWorks.appendChild(secondary);
 
   // create and append the action container
@@ -208,11 +213,6 @@ function generatePopup() {
   seeSourceImg.src = 'images/see-source-icon.svg';
   seeSourceImg.alt = 'see source icon github';
   seeSourceButton.appendChild(seeSourceImg);
-
-  // create and append the overlay div
-  const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
-  mobilePopup.appendChild(overlay);
 }
 
 // Add click event listeners to the see-project buttons
