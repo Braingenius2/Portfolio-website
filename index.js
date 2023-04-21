@@ -158,7 +158,12 @@ function generatePopup() {
   img1.id = 'img1';
   img1.src = worksData[0].featuredImageMobile;
   img1.alt = 'project image';
+
+  const img2 = document.createElement('img');
+  img2.src = "images/cancel-menu-png.png";
+  img2.classList.add('cancel_abs')
   featuredImage.appendChild(img1);
+  featuredImage.appendChild(img2);
   cardWorks.appendChild(featuredImage);
 
   // create and append the primary container
@@ -212,10 +217,16 @@ function generatePopup() {
   const seeSourceImg = document.createElement('img');
   seeSourceImg.src = 'images/see-source-icon.svg';
   seeSourceImg.alt = 'see source icon github';
-  seeSourceButton.appendChild(seeSourceImg);
+  seeSourceButton.appendChild(seeSourceImg); 
+
+  document.querySelector('.cancel_abs').addEventListener('click', () => {
+    console.log('cancel button clicked')
+    card.removeChild(mobilePopup);
+  })
 }
 
 // Add click event listeners to the see-project buttons
 document.querySelectorAll('.see-project').forEach((button) => {
   button.addEventListener('click', generatePopup);
 });
+
