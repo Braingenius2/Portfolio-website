@@ -250,6 +250,7 @@ nav ul li a:hover {
 
 .featured-image {
   width: 100%;
+  position: relative;
 }
 
 .featured-image #img1 {
@@ -996,4 +997,10 @@ footer hr {
   footer .social-icons {
     margin-bottom: 0;
   }
+}
+
+.cancel_abs {
+  position: absolute;
+  right: 205px;
+  width: 150px;
 }
