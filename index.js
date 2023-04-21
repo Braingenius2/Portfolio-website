@@ -82,16 +82,18 @@ let worksData = [
 // Dynamically create works section using the information stored in the works array
 const works = document.getElementById('works');
 const worksText = document.createElement('div');
-text.setAttribute('class', 'text');
+worksText.setAttribute('class', 'text');
 let textContent = `<h2>My Recent Works</h2>
                     <hr class="indicator">`;
-text.innerHTML(textContent);
+worksText.innerHTML = textContent;
+works.appendChild(worksText)
+
+const cardWorkRow = document.createElement('div');
+cardWorkRow.setAttribute('class', 'card-work-row');
+works.appendChild(cardWorkRow);
 
 // loop through worksData to create cards in the grid
 for (let i = 0; i < worksData.length; i++) {
-  const cardWorkRow = document.createElement('div');
-  cardWorkRow.setAttribute('class', 'card-work-row');
-
   const card = document.createElement('article');
   card.setAttribute('class', 'card');
   cardWorkRow.appendChild(card);
@@ -101,10 +103,22 @@ for (let i = 0; i < worksData.length; i++) {
   card.appendChild(imgPlaceholder);
   let figureContent = `<img src="" alt="">
                         <figcaption></figcaption>`;
-  imgPlaceholder.innerHTML(figureContent);
+  imgPlaceholder.innerHTML = figureContent;
 
   const cardText = document.createElement('div');
   cardText.setAttribute('class', 'text');
   card.appendChild(cardText);
-
+  let cardTextContent = `<h3>Multi-Post Stories <br>Gain+Glory</h3>
+                         <ul class="tags">
+                          <li>Ruby on Rails</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>HTML</li>
+                         </ul>`;
+  cardText.innerHTML = cardTextContent;
+  const seeProjectButton = document.createElement('button');
+  seeProjectButton.setAttribute('class', 'see-project');
+  let buttonText = `See project`;
+  seeProjectButton.innerHTML = buttonText;
+  cardText.appendChild(seeProjectButton);
 };

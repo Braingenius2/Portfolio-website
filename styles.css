@@ -200,7 +200,7 @@ nav ul li a:hover {
   align-items: center;
   padding: 64px 20px 68px 20px;
   gap: 58px;
-  height: 3283px;
+  height: auto;
   width: 100vw;
 }
 
@@ -221,6 +221,7 @@ nav ul li a:hover {
   line-height: 130%;
   text-align: center;
   color: #172b4d;
+  width: 65%;
 }
 
 .indicator {
