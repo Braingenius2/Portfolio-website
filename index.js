@@ -28,7 +28,7 @@ let worksData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   },
@@ -37,7 +37,7 @@ let worksData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   },
@@ -46,7 +46,7 @@ let worksData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   },
@@ -55,7 +55,7 @@ let worksData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   },
@@ -64,7 +64,7 @@ let worksData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   },
@@ -73,7 +73,7 @@ let worksData = [
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     featuredImageMobile: 'images/Snapshoot-Portfolio-mobile.png',
     featuredImageDesktop: 'images/Snapshoot-Portfolio-desktop.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersionLink: 'https://braingenius2.github.io/Portfolio-website/project1',
     sourceLink: 'https://github.com/Braingenius2/Portfolio-website'
   }
@@ -108,17 +108,24 @@ for (let i = 0; i < worksData.length; i++) {
   const cardText = document.createElement('div');
   cardText.setAttribute('class', 'text');
   card.appendChild(cardText);
-  let cardTextContent = `<h3>Multi-Post Stories <br>Gain+Glory</h3>
-                         <ul class="tags">
-                          <li>Ruby on Rails</li>
-                          <li>CSS</li>
-                          <li>JavaScript</li>
-                          <li>HTML</li>
-                         </ul>`;
-  cardText.innerHTML = cardTextContent;
+
+  const cardName = document.createElement('h3');
+  cardName.textContent = worksData[i].name;
+  cardText.appendChild(cardName);
+
+  const tags = document.createElement('ul');
+  tags.classList.add('tags');
+
+  for (let j = 0; j < 4; j++) {
+    const tagItem = document.createElement('li');
+    tagItem.textContent = worksData[i].technologies[j];
+    tags.appendChild(tagItem);
+  };
+
+  cardText.appendChild(tags);
+  
   const seeProjectButton = document.createElement('button');
-  seeProjectButton.setAttribute('class', 'see-project');
-  let buttonText = `See project`;
-  seeProjectButton.innerHTML = buttonText;
+  seeProjectButton.classList.add('see-project');
+  seeProjectButton.innerHTML = `See project`;
   cardText.appendChild(seeProjectButton);
 };
