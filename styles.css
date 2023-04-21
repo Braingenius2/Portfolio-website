@@ -182,6 +182,17 @@ nav ul li a:hover {
   margin-top: 80.49px;
 }
 
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
 #contact h2 {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
@@ -374,17 +385,6 @@ article.card div.text h3 {
 
   /* Theme 2 / Neutral 2 */
   color: #3a4a42;
-}
-
-.tags {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  gap: 8px;
-  width: 100%;
-  justify-content: center;
 }
 
 .card .text .tags {
