@@ -758,6 +758,46 @@ footer hr {
     width: 95%;
   }
 
+  .card-works {
+    width: 80%;
+    height: max-content;
+  }
+
+  .primary-and-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .primary {
+    width: 60%;
+  }
+
+  .action {
+    width: 35%;
+    justify-content: space-between;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+
+  .action .see-live {
+    width: 40%;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .action .see-source {
+    width: 55%;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .action .see {
+    font-size: 15px;
+  }
+
   #works .text {
     height: 100%;
   }
