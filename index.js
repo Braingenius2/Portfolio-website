@@ -20,3 +20,16 @@ mobileMenu.querySelectorAll('a').forEach((link) => {
     mobileMenu.style.display = 'none';
   });
 });
+
+const emailInput = document.getElementById('email');
+const submitButton = document.getElementById('submit');
+
+submitButton.addEventListener('click', (event) => {
+  if (emailInput.value === emailInput.value.toLowerCase()) {
+    // Email is in lowercase, allow form submission
+    return true;
+  } else {
+    // Email is not in lowercase, prevent form submission and show error message
+
+  }
+});
