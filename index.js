@@ -289,12 +289,12 @@ submitButton.addEventListener('click', (event) => {
   if (emailInput.value === emailInput.value.toLowerCase()) {
     // Email is in lowercase, allow form submission
     return true;
-  } else {
-    // Email is not in lowercase, prevent form submission and show error message
-    event.preventDefault();
-    const errorElement = document.createElement('p');
-    errorElement.innerText = 'Email must be in lowercase';
-    errorElement.style.color = 'red';
-    submitButton.parentElement.insertBefore(errorElement, submitButton);
-    return false;
-  }})
+  }
+  // Email is not in lowercase, prevent form submission and show error message
+  event.preventDefault();
+  const errorElement = document.createElement('p');
+  errorElement.innerText = 'Email must be in lowercase';
+  errorElement.style.color = 'red';
+  submitButton.parentElement.insertBefore(errorElement, submitButton);
+  return false;
+});
