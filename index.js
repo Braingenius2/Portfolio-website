@@ -291,5 +291,10 @@ submitButton.addEventListener('click', (event) => {
     return true;
   } else {
     // Email is not in lowercase, prevent form submission and show error message
-
+    event.preventDefault();
+    const errorElement = document.createElement('p');
+    errorElement.innerText = 'Email must be in lowercase';
+    errorElement.style.color = 'red';
+    submitButton.parentElement.insertBefore(errorElement, submitButton);
+    return false;
   }})
