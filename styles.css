@@ -763,6 +763,10 @@ footer hr {
     height: max-content;
   }
 
+  .featured-image #img1 {
+    margin-top: 75px;
+  }
+
   .primary-and-actions {
     display: flex;
     align-items: center;
@@ -776,26 +780,36 @@ footer hr {
   }
 
   .action {
-    width: 35%;
-    justify-content: space-between;
+    width: 38%;
+    justify-content: flex-end;
     align-self: flex-start;
-    justify-self: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .action .see-live {
-    width: 40%;
-    padding: 12px;
+    padding: 2% 2%;
     gap: 10px;
+    height: 44px;
+    max-width: 115px;
+    flex-wrap: wrap;
   }
 
   .action .see-source {
-    width: 55%;
-    padding: 12px;
+    padding: 2% 2%;
     gap: 10px;
+    height: 44px;
+    max-width: 139px;
+    flex-wrap: wrap;
   }
 
   .action .see {
     font-size: 15px;
+    flex: 1;
+  }
+
+  .action .see img {
+    font-size: 100%;
   }
 
   #works .text {
@@ -1041,6 +1055,15 @@ footer hr {
 
 .cancel_abs {
   position: absolute;
-  right: 205px;
-  width: 150px;
+  right: 0%;
+  width: 60px;
+  top: 0%;
+}
+
+.close-popup-desktop {
+  position: absolute;
+  right: 12.5%;
+  width: 40px;
+  top: 50px;
+  z-index: 5;
 }

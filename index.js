@@ -171,24 +171,31 @@ function generatePopup() {
 
   // append the popup container
   card.appendChild(mobilePopup);
+
+  if (window.innerWidth > 768){
+    const closePopupDesktop = document.createElement('img');
+    closePopupDesktop.src ='images/cancel-popup-desktop.png';
+    closePopupDesktop.classList.add('close-popup-desktop');
+    mobilePopup.appendChild(closePopupDesktop);
+  }
   mobilePopup.appendChild(cardWorks);
   featuredImage.classList.add('featured-image');
   const img1 = document.createElement('img');
   img1.id = 'img1';
-  const img2 = document.createElement('img');
-  img2.classList.add('cancel_abs');
 
   if (window.innerWidth < 768) { // Select image for mobile screen
     img1.src = worksData[0].featuredImageMobile;
-    img2.src = 'images/cancel-menu-png.png';
+    img1.alt = 'project image';
+    const img2 = document.createElement('img');
+    img2.classList.add('cancel_abs');
+    img2.src = 'images/cancel-popup-mobile.png';
+    featuredImage.appendChild(img1);
+    featuredImage.appendChild(img2);
   } else { // Select image for desktop screen
     img1.src = worksData[0].featuredImageDesktop;
-    img2.src = 'images/cancel-menu-png.png';
+    img1.alt = 'project image';
+    featuredImage.appendChild(img1);
   }
-
-  img1.alt = 'project image';
-  featuredImage.appendChild(img1);
-  featuredImage.appendChild(img2);
   cardWorks.appendChild(featuredImage);
 
   // peculiar design for mobile
@@ -221,6 +228,11 @@ function generatePopup() {
     action.appendChild(seeSourceButton);
     seeSourceButton.appendChild(seeSourceSpan);
     seeSourceButton.appendChild(seeSourceImg);
+
+    // Add  click event listeners to close-popup icon for mobile
+    document.querySelector('.cancel_abs').addEventListener('click', () => {
+      card.removeChild(mobilePopup);
+    });
   } else { // peculiar design for desktop
     // create and append primary-and-actions container peculiar to desktop screen
     const primaryAndActions = document.createElement('div');
@@ -257,11 +269,12 @@ function generatePopup() {
     secondary.innerHTML = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.';
     cardWorks.appendChild(secondary);
     cardWorks.appendChild(secondary);
-  }
 
-  document.querySelector('.cancel_abs').addEventListener('click', () => {
-    card.removeChild(mobilePopup);
-  });
+    // Add click event listeners to close-popup icon for desktop
+    document.querySelector('.close-popup-desktop').addEventListener('click', () => {
+      card.removeChild(mobilePopup);
+    });
+  }
 }
 
 // Add click event listeners to the see-project buttons
