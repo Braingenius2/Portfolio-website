@@ -172,9 +172,9 @@ function generatePopup() {
   // append the popup container
   card.appendChild(mobilePopup);
 
-  if (window.innerWidth > 768){
+  if (window.innerWidth > 768) {
     const closePopupDesktop = document.createElement('img');
-    closePopupDesktop.src ='images/cancel-popup-desktop.png';
+    closePopupDesktop.src = 'images/cancel-popup-desktop.png';
     closePopupDesktop.classList.add('close-popup-desktop');
     mobilePopup.appendChild(closePopupDesktop);
   }
