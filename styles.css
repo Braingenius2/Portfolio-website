@@ -1067,3 +1067,24 @@ footer hr {
   top: 50px;
   z-index: 5;
 }
+
+.error {
+  border: 1px solid red;
+}
+
+.success {
+  border: 1px solid rgb(75, 31, 217);
+}
+
+.error-message {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+  border: none;
+  margin: 15px 16px;
+}
